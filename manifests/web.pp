@@ -41,6 +41,7 @@ exec { "database-musicjungle":
 
 exec { "grant-bd":
     command => "mysql -uroot -e \"GRANT ALL PRIVILEGES ON * TO 'musicjungle'@'%' IDENTIFIED BY 'minha-senha';\" musicjungle",
+    unless  => "mysql -umusicjungle -pminha-senha musicjungle",
     path => "/usr/bin",
     require => Exec["database-musicjungle"]
 }
