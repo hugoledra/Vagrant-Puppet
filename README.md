@@ -6,3 +6,10 @@
 # Puppet
 - [Puppet Website](https://puppet.com/)
 - [Puppet Wiki](https://en.wikipedia.org/wiki/Puppet_(company))
+
+#### Requirements to run this project
+Vagrant - Puppet
+
+#### Run this project
+- $vagrant up
+- $sudo puppet apply /vagrant/manifests/arquivo.pp
