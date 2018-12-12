@@ -14,8 +14,9 @@ At the end of this project, we will have a virtual machine, Java Tomcat applicat
 Vagrant - Puppet
 
 #### Run this project
-- $vagrant up
-- $vagrant provision
-- $sudo puppet apply /vagrant/manifests/arquivo.pp
-
+```
+$vagrant up
+$vagrant provision
+$sudo puppet apply /vagrant/manifests/arquivo.pp
+```
 ###### This project is based on the Alura course > [Vagrant and Puppet Course: Creation and provision of virtual machines](https://cursos.alura.com.br/course/devops-com-vagrant-e-puppet)
